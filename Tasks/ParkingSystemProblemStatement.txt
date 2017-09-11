@@ -1,0 +1,17 @@
+Develop a parking system, identify the classes and the relation between them. 
+For e.g. 
+
+Parking System - class, has collection of the floors
+            Floor  - has collection of the parking slots
+                        Parking Slots
+                                    Parking slot could keep cars
+                                                Car - generic class - Different kind of cars  Car<BMW>, Car<Toyota> 
+												
+You could modify/extend it as per your ideas but the concept should be to implement a parking system.
+Also, it should have the following methods.
+
+1) To get the count of all available (free) parking slots for a floor
+2) To get count of all the available (free) parking slots for all floors
+3) To get count of total parking slots for the system (filled or vacant - all)
+4) To park a car in a available (free) slot and the count should reduce by 1
+5) To unpark a car in a available (free) slot and the count should reduce by 1

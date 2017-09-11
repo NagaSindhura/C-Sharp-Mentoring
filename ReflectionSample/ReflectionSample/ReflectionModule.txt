@@ -1,0 +1,4 @@
+1.Create an example&nbsp;of adding your handler to an event class using reflection.<
+
+2. Create with the help of reflection an instance of the class List T. Type T - is set dynamically. 
+Fill the list with 5 copies of type T (if possible).

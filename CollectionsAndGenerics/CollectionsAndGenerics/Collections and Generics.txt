@@ -1,0 +1,27 @@
+
+Create generic collection of generic classes with enumerator.
+Also add methods to work with your collection, for example Add(), Remove(), Count(), AddRange() and so on.
+Add generics methods inside your generic classes, demonstrate how you could use them;
+
+Show the results of work with your collection;
+
+For example:
+	Mylist<MyClass<T>> list = new...
+
+	list.Add(new MyClass<T>());
+	....
+	list.AddRange(new Mylist<MyClass<T>>(){new MyClass<T>(), new MyClass<T>()});
+	....
+	list.Remove(...);
+	...
+	foreach(var item in list)
+	{
+		//proceed
+		item.DoSmth<T>().....
+	}
+
+	-----------Review Comments--------------------
+	private object[] _items = new object[10]; - Have you ever seen collections with hardcoded number of elements?
+	this._items... , this.Remove.... - do you need 'this' qualifier for the type which doesn't derived from another type? 
+	Expected to see generic type Color<Blue>, Color<Red> and so on, not inheritance
+	Public prop public int Count => _count; should being prop with private setter: public int Count { get; private set; } - then private field becomes redundant (private int _count;)

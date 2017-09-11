@@ -1,0 +1,32 @@
+Delegates and Events
+
+Create a FileSystemVisitor class that allows you to go through the folder tree in the file system, starting at the point you set 
+(user input or constant). 
+The specified class must:
+1. Return all found files and folders as a linear sequence, for which use your iterator (using the yield operator if possible)
+2. Enable the ability to specify the algorithm for deleting found files and folders when creating an instance of FileSystemVisitor 
+(via a special overloaded 		constructor). The algorithm should be specified in the form of a delegate / lambda
+3. Generate a notification (through the mechanism of events) about the stages of its work. 
+	In particular, the following events should be implemented
+	- Start and end (to start and end the search)
+	- FileFinded / DirectoryFinded for all found files.
+	 These events should allow (using special flags in the passed parameters):
+	 	a. abort the search
+		b. exclude files / folders from the final list
+
+
+
+
+		Delegates and Events
+
+Create a FileSystemVisitor class that allows you to go through the folder tree in the file system, starting at the point you set 
+(user input or constant). 
+The specified class must:
+
+3. Generate a notification (through the mechanism of events) about the stages of its work. 
+	In particular, the following events should be implemented
+	- Start and end (to start and end the search)
+	- FileFinded / DirectoryFinded for all found files.
+	 These events should allow (using special flags in the passed parameters):
+	 	a. abort the search
+		b. exclude files / folders from the final list

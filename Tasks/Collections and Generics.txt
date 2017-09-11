@@ -1,0 +1,21 @@
+
+Create generic collection of generic classes with enumerator.
+Also add methods to work with your collection, for example Add(), Remove(), Count(), AddRange() and so on.
+Add generics methods inside your generic classes, demonstrate how you could use them;
+
+Show the results of work with your collection;
+
+For example:
+	Mylist<MyClass<T>> list = new...
+
+	list.Add(new MyClass<T>());
+	....
+	list.AddRange(new Mylist<MyClass<T>>(){new MyClass<T>(), new MyClass<T>()});
+	....
+	list.Remove(...);
+	...
+	foreach(var item in list)
+	{
+		//proceed
+		item.DoSmth<T>().....
+	}

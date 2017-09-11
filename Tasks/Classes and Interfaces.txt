@@ -1,0 +1,42 @@
+Family Tree Structure.
+
+Create the console Application, name should be FamilyTreeStructure
+
+Requirements:
+	1. Create IFamilyTree interface which contains the following methods: 
+		- Create() - returns the instance of FamilyTree class
+		- ShowTree() - Print out the tree-viewed representation to the console (feel free to choose: vertical, horizontal, etc.)
+		- SearchByName() - returns formatted string - 'First Name - Last Name [Date of birth](dd/mm/yyyy) - [Date of death](dd/mm/yyyy)(if applicable)'
+						 - SearchByName performs full text search: if we have person with name "John Smith", on searching by (for example) 'hn' or 'mit', instance "John Smith" should be returned
+						 - if multiple options possible, result have to be showed on the different lines
+
+	2. Create FamilyTree class, which implements IFamilyTree and which contains the following information: 
+		- Date of creation
+		- Person
+
+	3. Create IPerson interface which contains the following methods: 
+		- ToString() - overloaded, returns the string representation of the Person instance in the following format: 
+						'First Name - Last Name [Date of birth](dd/mm/yyyy) - [Date of death](dd/mm/yyyy)(if applicable)'
+		- AddParent() - add parent, which parent - depends on the gender
+		- AddChild() - add single object
+		- AddChilds() - add list of child
+
+	4.  Create a class called Person which will have a 
+		- First Name
+		- Last Name
+		- Date of birth
+		- Date of death (if applicable)
+		- Gender
+		- Father (type Person)
+		- Mother (type Person)
+		- List of childs (type Person)
+
+COS: As a user, I want to run console application, and see the results of the program:
+	- see search results by name for exact person
+	- see search results by name for several persons
+	- see tree-viewed representation of the family tree structure
+
+Restrictions:
+	- You haven't use the LINQ operations
+
+Archivate your solution, name should be 'YourFirstName_LastName_NumberOfTheModule', attach this archive, when the task will be ready.

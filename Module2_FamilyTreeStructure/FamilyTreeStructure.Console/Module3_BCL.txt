@@ -1,0 +1,20 @@
+	Family Tree Structure.
+
+	Extend the FamilyTreeStructure Application with the following:
+
+	1. Have a new property "Income" in Person class.
+		- Condition: Each person may or may not have income. (NUllable types)
+		- Condition: Person with age less than 18 cannot have income. (Use custom attributes)
+
+	2. Write a method to get total income of the family above him/her.
+
+	3. Craete new method in the interface IPerson GetFamily(). It should get Father, Mother, sibling names in comma seperated. (Use stringbuider)
+
+COS: As a user, I want to run console application, and see the results of the program:
+- see total income for concrete person
+- see results of GetFamily method
+
+Restrictions:
+	- You haven't use the LINQ operations
+
+Archivate your solution, name should be 'YourFirstName_LastName_NumberOfTheModule', attach this archive, when the task will be ready.

@@ -1,0 +1,9 @@
+It should be one solution with several projects inside. Set console application as startup app, demonstrate the results of both tasks in the main.
+
+1. Write a class library that contains a method for converting a string to an integer. Use the standard methods int.Parse () 
+and int.TryParse () is prohibited. Provide correct error handling (empty string, null, incorrect number and so on)
+
+2. Imagine that you have a stack, so you have to transfer data over the network by one item from it. Stack contains a large count of records 
+and because of memory consumption limitations by the application you can not copy it to the cache. 
+Provide the best way to preserve the initial state of the application if an error occurred during the data transfer. 
+Write an example of this processing

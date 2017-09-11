@@ -1,0 +1,4 @@
+Create  a project and Cache Data for a service which has two methods GetAllCustomers and GetAllProducts. 
+Right now this data could be provided by a DataInitializer class. Later on this may come from database.
+
+Also, Log the Two method calls and whether data is retrieved from cache or the service methods are invoked.
